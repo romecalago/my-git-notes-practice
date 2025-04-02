@@ -1,0 +1,53 @@
+
+ctrl + shift CV - copy/paste
+
+q - this is for existin
+:wq - exiting text
+
+
+git config --global user.name "Rome Calago" 
+git config --global user.email "romecalago@gmail.com"
+git config --list
+got config format.pretty oneline
+git config log.abbrevCommit true
+git config push.autoSetupRemote true
+
+
+
+git help
+git help -g 
+git help -a
+git init                      => if you want to initialize existing folder
+git init your-repo-here       => Initialized empty Git repository 
+cd your-repo-here             => "cd" stands for "change directory" 
+ls                            => lists the current directory files/contents
+ls -a                         => Lists will display hidden files/contents
+ls .git                       => this show the files/contents inside that hidden folder
+git status                    => displays the state of the working directory and the staging area
+rm -vfr your-folder/file-here => used to remove a folder file from a Git repository
+echo "#git-help" > git-help.txt => display messages, or to create and write to files
+git add git-help.txt          => specifically add the changes
+git add .                     => adds all the change in the working directory to the staging area
+git add '*XXXX*'              => this is like filtering. '*con*' will for filenames that contains con like git-config.txt, connection.txt
+git add -i                    => for interactive
+git reset git-status.txt      => opposite of "add" command
+git reset . 
+git commit -m "your commit message"
+git show
+git show 1a81c2
+git show HEAD
+git commit --amend            => to edit the commit message
+git log
+git log --oneline
+git pull                      => pull and syncs remote commits back down to the local repository. which is actually a combination of git fetch and git merge.
+git fetch                     => only pulls down all changes into the origin main branch
+git merge                     => merge the changes we pulled from our origin main branch into our main branch
+git branch -a
+git switch                    => command is used to to create and switch branches
+git switch -c my-branch       => create and switch to a branch in a single command with the -c option followed by the branch name
+
+
+
+git remote add origin https://github.com/romecalago/my-git-notes-practice.git
+git branch -M master
+git push -u origin master
